@@ -36,6 +36,7 @@ Development log
 2010-01-22
 
 [Todos]
+
 * [Castle](http://www.castleproject.org/)을 이용한 IoC/DI library 개발
 * [NHibernate](http://nhforge.org/)을 이용한 ORM library 개발
     * Rhino Commons은 NHibernate2.X 를 기반으로 구성되어 있음. 최신버전인 NHibernate 3을 이용하도록 커스터마이징 개발
