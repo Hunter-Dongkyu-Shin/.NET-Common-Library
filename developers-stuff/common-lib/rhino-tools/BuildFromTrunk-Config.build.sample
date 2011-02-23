@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding='iso-8859-1' ?>
+<project
+	name="rhino.tools.build.from.trunk"
+	xmlns="http://nant.sf.net/release/0.85/nant.xsd"
+>
+	<property name="nhibernate.dir" value="..\NHibernate\nhibernate" overwrite="false"/>
+	<property name="castle.dir" value="..\Castle" overwrite="false"/>
+	<property name="rhino.dir" value="." overwrite="false"/>
+	<property name="configuration" value="debug" overwrite="false"/>
+	<property name="svn.path" value="svn.exe" overwrite="false"/>
+	<property name="castle.test.framework" value="nunit" overwrite="false"/>
+	<property name="castle.test.console" value="nunit-console" overwrite="false"/>
+	<property name="enable.tests" value="true" overwrite="false"/>
+</project>

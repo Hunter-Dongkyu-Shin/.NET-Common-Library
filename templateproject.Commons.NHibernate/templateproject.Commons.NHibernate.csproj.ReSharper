@@ -1,0 +1,6 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>E9718B20-46DA-4BFF-96C3-9D08E212F6C2/d:Repositories</SkipFolder>
+    <SkipFolder>E9718B20-46DA-4BFF-96C3-9D08E212F6C2/d:UnitOfWork</SkipFolder>
+  </NamespaceFolders>
+</Configuration>

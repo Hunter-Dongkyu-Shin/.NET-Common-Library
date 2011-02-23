@@ -1,0 +1,17 @@
+<script type='text/javascript'>
+	function error(e)
+	{
+		alert(e);
+	}
+	function paging(index)
+    {
+		var url = '/faq/index.rails';
+	    var pars = 'page=' + index +'&isAjax=true';		
+	    new Ajax.Request(url,{method: 'get', evalScripts: true, parameters: pars, onException: error});        
+    
+	}
+</script>
+<h2>Subjects for questions:</h2>
+<div id='paginatedGrid'>
+	<?brail OutputSubView('grid') ?>
+</div>

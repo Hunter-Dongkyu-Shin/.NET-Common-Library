@@ -1,0 +1,53 @@
+Building in visual studio
+==================
+
+The AssemblyInfo.cs is missing from the repository.
+=============================================
+The reason for that is that the build is generating updated AssemblyInfo.cs files for all projects,
+with the correct version and revision notes.
+
+You need to run (from the project root):
+ > nant
+ 
+from the command line before you can build in visual studio.
+
+You can also run:
+
+> nant
+
+from a specific project directory, if you want to build just it, note that you generally need to build the whole thing before you can do this, since there are dependencies between the projects.
+
+Requirements
+===============
+The tests Rhino Tools assumes that you have a SQL Server database installed and with CREATE DATABASE privileges for the current user.
+You should also ensure that the database server has a database named 'test' and a database named 'test2', with CREATE TABLE and DROP TABLE privileges for
+the current user.
+
+The .NET SDK is also mandatory
+
+Build options
+==============
+
+- Building without tests: 
+> nant -D:common.testrunner.enabled=false
+
+Building From NHibernate and Castle Trunks
+==================
+1) Get the trunk sources for NHibernate, Castle, and Rhino-Tools
+
+2) Build each project first using the respective scripts and build methods
+
+3) Create a file in the root directory of Rhino-Tools named
+   BuildFromTrunk-Config.build -- Use the sample as an example
+   
+   * Important *
+   *
+   * Castle requires NUnit on the path so be sure set Castle-Test-Framework and Castle-Tester-Console
+   * in the BuildFromTrunk-Config.build file.
+
+4) From a command prompt with administrative access run the following command from the Rhino-Toosl root.
+   >nant -f:BuildFromTrunk.build
+
+
+
+

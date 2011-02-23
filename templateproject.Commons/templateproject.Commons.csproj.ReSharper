@@ -1,0 +1,7 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>40A66DF7-458D-4A41-B307-E382DB5B1E3D/d:RhinoContainer</SkipFolder>
+    <SkipFolder>40A66DF7-458D-4A41-B307-E382DB5B1E3D/d:Threading</SkipFolder>
+    <SkipFolder>40A66DF7-458D-4A41-B307-E382DB5B1E3D/d:ToPublic</SkipFolder>
+  </NamespaceFolders>
+</Configuration>
